@@ -1,0 +1,8 @@
+{
+  "name": "OppSift",
+  "description": "Global Opportunity Intelligence Platform for discovering, evaluating, and managing tenders, government contracts, RFPs, grants, and commercial opportunities worldwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,1725 @@
+###### OPPSIFT — MASTER GLOBAL PRODUCT DESIGN, BRAND IDENTITY & FRONTEND GENERATION BRIEF
+
+## 1. YOUR ROLE
+
+Act as a world-class product design team consisting of:
+
+- A senior SaaS product designer.
+- A global enterprise UX architect.
+- A senior frontend engineer.
+- A brand identity designer.
+- A design systems engineer.
+- A responsive application specialist.
+
+You are designing and generating the complete production frontend experience for OPPSIFT.
+
+This is not a landing-page-only exercise, a dashboard template, or a UI concept.
+
+You are building the visual and interactive foundation of a serious global software product.
+
+Every screen must feel like it belongs to one coherent, premium, internationally credible platform.
+
+The output must contain actual screen designs and reusable frontend code, not merely written descriptions, design recommendations or wireframes.
+
+---
+
+# 2. PRODUCT IDENTITY
+
+PRODUCT NAME: OppSift
+
+PRODUCT CATEGORY: Global Opportunity Intelligence Platform.
+
+PRODUCT POSITIONING:
+
+OppSift helps businesses, organisations, consultants and professionals discover relevant opportunities, understand their requirements, evaluate eligibility and manage their opportunity pipeline.
+
+Opportunity categories include:
+
+- Government tenders.
+- Public procurement.
+- Contracts.
+- Requests for Proposals (RFPs).
+- Grants.
+- Funding programmes.
+- Commercial opportunities.
+- Other supported opportunity categories.
+
+CORE PRODUCT VALUE:
+
+Discover the right opportunity. Understand it. Know what to do next.
+
+OppSift is not simply a directory of tenders.
+
+It is an intelligence platform that brings opportunity discovery, analysis, eligibility understanding, matching, monitoring and opportunity management together.
+
+The product is global-first.
+
+Do not design it as a Kenya-only or Africa-only platform.
+
+Countries, currencies, languages, dates, time zones and organisations must be treated as international product requirements.
+
+Do not claim complete global coverage. Display only countries and sources that the actual platform supports.
+
+---
+
+# 3. VISUAL REFERENCE — FOLLOW THE UPLOADED IMAGE
+
+The uploaded dashboard screenshot is the PRIMARY visual reference.
+
+Study its:
+
+- Sidebar proportions.
+- Burgundy-to-pink gradient.
+- Navigation placement.
+- Top navigation.
+- Card arrangement.
+- Dark dashboard appearance.
+- Light dashboard appearance.
+- Spacing.
+- Typography.
+- Borders.
+- Shadows.
+- Data visualisation placement.
+- Overall premium SaaS appearance.
+
+Recreate its visual character as closely as possible.
+
+Do not substitute a generic dashboard template.
+
+Do not change the dominant colour direction.
+
+Do not turn the interface into an ordinary blue corporate dashboard.
+
+Do not use a completely black cyberpunk appearance.
+
+The design must retain the reference's combination of burgundy identity, dark navy structure and clean white surfaces.
+
+IMPORTANT:
+
+The screenshot presents dark and light treatments side by side for comparison.
+
+In the actual OppSift application, implement two separate complete themes. Users must switch between them.
+
+---
+
+# 4. OFFICIAL OPPSIFT BRAND COLOURS
+
+The brand combines two palettes.
+
+BURGUNDY EXECUTIVE — PRIMARY AND DOMINANT
+
+Use these exact colours:
+
+- \#251019 — Deep Burgundy
+- \#541B32 — Executive Burgundy
+- \#A33B59 — Burgundy Accent
+- \#E8A4B5 — Rose Accent
+- \#FFF1F2 — Soft Rose
+
+GLOBAL INTELLIGENCE — SECONDARY
+
+Use these exact colours:
+
+- \#0B1F3A — Deep Intelligence Navy
+- \#164E8B — Intelligence Blue
+- \#38BDF8 — Technology Blue
+- \#E0F2FE — Pale Blue
+- \#FFFFFF — White
+
+NEUTRAL COLOURS
+
+Dark mode:
+
+- \#101114
+- \#171923
+- \#1C2433
+- \#263244
+- \#F8FAFC
+- \#CBD5E1
+
+Light mode:
+
+- \#FFFFFF
+- \#F8FAFC
+- \#F1F5F9
+- \#E2E8F0
+- \#172033
+- \#64748B
+
+SEMANTIC COLOURS
+
+- Success: #16A34A
+- Warning: #D97706
+- Error: #DC2626
+- Information: #2563EB
+
+## Colour application rules
+
+Burgundy must occupy the largest share of the brand identity.
+
+Use the burgundy gradient:
+
+\#251019 → #541B32 → #A33B59
+
+Apply this gradient prominently to the vertical application sidebar.
+
+Use burgundy for:
+
+- Brand identity.
+- Sidebar.
+- Active navigation.
+- Primary actions.
+- Selected navigation elements.
+- Important highlights.
+- Brand-specific interface accents.
+
+Use intelligence blue for:
+
+- Charts.
+- Data indicators.
+- Information states.
+- Secondary actions.
+- Analytics.
+- Search-related interface accents.
+- Technology indicators.
+
+Use neutral colours for the main content surfaces.
+
+Do not make every component burgundy.
+
+Do not make the entire application blue.
+
+The balance must feel sophisticated and intentional.
+
+---
+
+# 5. OFFICIAL LOGO DESIGN
+
+Create an original, memorable, premium OppSift logo.
+
+This is an important deliverable.
+
+Do not use generic AI logos, generic globes, generic magnifying glasses or an ordinary letter O inside a circle.
+
+Develop a distinctive symbol that communicates:
+
+- Opportunity discovery.
+- Intelligence.
+- Global reach.
+- Precision.
+- Strategic insight.
+- Forward movement.
+
+The symbol should be recognisable even without the word OppSift.
+
+Explore an intelligent combination of:
+
+- A distinctive O or OS monogram.
+- Abstract global geometry.
+- A discovery or directional motif.
+- A subtle signal of intelligence or opportunity.
+
+Do not make the logo unnecessarily complicated.
+
+## Required logo variations
+
+Create:
+
+1. Primary horizontal logo: icon + OppSift wordmark.
+2. Standalone brand symbol.
+3. Compact sidebar logo.
+4. Dark-background logo.
+5. Light-background logo.
+6. Monochrome logo.
+7. Browser favicon.
+8. App icon.
+
+## Typography
+
+The wordmark should feel:
+
+- Modern.
+- Confident.
+- Premium.
+- International.
+- Professional.
+
+Avoid playful lettering and excessively futuristic fonts.
+
+## Logo colours
+
+Primary:
+
+- Executive Burgundy.
+- Deep Burgundy.
+- White.
+
+Secondary:
+
+- Intelligence Blue.
+
+Provide clean SVG versions suitable for actual frontend use.
+
+The logo must work at small sizes and remain recognisable.
+
+Do not use the uploaded dashboard screenshot as the logo itself.
+
+---
+
+# 6. DESIGN SYSTEM
+
+Create one reusable design system for the entire application.
+
+Define:
+
+- Colour tokens.
+- Typography.
+- Font sizes.
+- Font weights.
+- Spacing.
+- Grid.
+- Layout widths.
+- Border radii.
+- Shadows.
+- Elevation.
+- Buttons.
+- Inputs.
+- Select menus.
+- Dropdowns.
+- Modals.
+- Dialogues.
+- Tables.
+- Cards.
+- Tabs.
+- Badges.
+- Tooltips.
+- Breadcrumbs.
+- Pagination.
+- Navigation.
+- Charts.
+- Notifications.
+- Empty states.
+- Loading states.
+- Error states.
+
+Use consistent components.
+
+Typography should be premium and highly readable. Inter or a comparable professional interface font is acceptable.
+
+Use Lucide icons or another consistent line-icon system.
+
+Never mix unrelated icon styles.
+
+Do not use emojis as replacements for professional interface icons.
+
+## Card design
+
+Cards should have:
+
+- Clean proportions.
+- Restrained shadows.
+- Subtle borders.
+- Appropriate padding.
+- Consistent alignment.
+- Excellent information hierarchy.
+
+## Interaction design
+
+Include:
+
+- Hover states.
+- Focus states.
+- Selected states.
+- Disabled states.
+- Loading states.
+- Success feedback.
+- Error feedback.
+- Confirmation dialogues.
+
+Use subtle transitions.
+
+Avoid excessive animation.
+
+---
+
+# 7. DARK AND LIGHT THEMES
+
+Create two complete themes.
+
+## Dark theme
+
+Use:
+
+- Deep navy.
+- Charcoal.
+- Burgundy.
+- Subtle blue highlights.
+- Light text.
+
+The dark mode should resemble the dark side of the supplied dashboard reference.
+
+## Light theme
+
+Use:
+
+- White.
+- Soft grey.
+- Burgundy.
+- Intelligence blue.
+- Dark readable typography.
+
+The light mode should resemble the light side of the supplied dashboard reference.
+
+Both themes must have:
+
+- Identical layouts.
+- Identical functionality.
+- Proper chart colours.
+- Readable borders.
+- Correct contrast.
+- Consistent navigation.
+- Theme-aware dialogs and forms.
+
+Create a theme toggle in the application shell.
+
+Support:
+
+- Light.
+- Dark.
+- System preference if practical.
+
+Persist the selected preference.
+
+Never create two different products for the two themes.
+
+---
+
+# 8. APPLICATION LAYOUT
+
+## Desktop
+
+Follow the supplied reference.
+
+Create:
+
+LEFT SIDEBAR:
+
+- Full-height burgundy gradient.
+- OppSift logo.
+- Grouped navigation.
+- Clear active navigation.
+- Elegant icons.
+- Collapsible behaviour.
+- User profile area.
+
+TOP BAR:
+
+- Global search.
+- Breadcrumbs or page context.
+- Notifications.
+- Help.
+- Theme switcher.
+- User avatar and account menu.
+
+MAIN CONTENT:
+
+- Spacious.
+- Organised.
+- Data-focused.
+- Responsive.
+- Consistent across routes.
+
+## Tablet
+
+- Adapt the sidebar.
+- Preserve important navigation.
+- Avoid cramped content.
+- Keep filters usable.
+
+## Mobile
+
+- Use a mobile navigation drawer or appropriate mobile navigation.
+- Make search accessible.
+- Stack dashboard cards.
+- Convert wide tables into responsive presentations.
+- Maintain usable forms.
+- Preserve all important actions.
+- Prevent horizontal overflow.
+
+Do not simply shrink desktop layouts.
+
+---
+
+# 9. COMPLETE PUBLIC WEBSITE
+
+Design every public-facing page.
+
+## 9.1 Homepage — /
+
+Create a premium international SaaS homepage.
+
+Include:
+
+- Navigation.
+- OppSift logo.
+- Hero section.
+- Main headline.
+- Supporting explanation.
+- Primary Get Started action.
+- Secondary Explore Opportunities action.
+- Product interface preview.
+- Opportunity category overview.
+- Global coverage presentation.
+- How OppSift works.
+- Intelligence features.
+- Matching and eligibility explanation.
+- Monitoring and alerts.
+- Benefits.
+- Trust and source transparency.
+- Pricing entry point.
+- FAQ.
+- Footer.
+
+The homepage should immediately explain what OppSift does.
+
+Do not fill it with meaningless marketing language.
+
+## 9.2 Product — /product
+
+Explain:
+
+- Opportunity discovery.
+- Matching.
+- Eligibility analysis.
+- Opportunity intelligence.
+- Monitoring.
+- Preparation.
+- Reporting.
+
+## 9.3 Opportunities — /opportunities
+
+Showcase available opportunity categories and discovery capabilities.
+
+## 9.4 Markets — /markets
+
+Present international market coverage.
+
+Include:
+
+- Countries.
+- Regions.
+- Coverage indicators.
+- Opportunity categories.
+- Source availability.
+
+Never fabricate coverage statistics.
+
+## 9.5 Sources — /sources
+
+Explain the data-source ecosystem.
+
+Include:
+
+- Source name.
+- Country.
+- Source category.
+- Data availability.
+- Last updated information when available.
+- Attribution.
+- Source transparency.
+
+Do not imply every source is connected when it is not.
+
+## 9.6 Solutions — /solutions
+
+Present product use cases for:
+
+- Businesses.
+- Consultants.
+- Organisations.
+- Suppliers.
+- Researchers.
+- Development organisations.
+
+## 9.7 How It Works — /how-it-works
+
+Explain the product workflow step by step.
+
+## 9.8 About — /about
+
+Present the OppSift mission, vision and product principles.
+
+## 9.9 Contact — /contact
+
+Include a professional contact form and support information.
+
+## 9.10 Pricing — /pricing
+
+Create a complete pricing page.
+
+Design:
+
+- Free plan.
+- Individual plan.
+- Professional plan.
+- Team plan.
+
+Use configurable pricing placeholders until actual prices are confirmed.
+
+Do not invent payment functionality.
+
+---
+
+# 10. AUTHENTICATION EXPERIENCE
+
+Design every authentication screen.
+
+All authentication screens must share the OppSift identity.
+
+Use an elegant split layout where appropriate:
+
+- Brand illustration or product messaging on one side.
+- Authentication form on the other.
+
+Do not overload authentication pages.
+
+## Required screens
+
+1. Login.
+2. Registration.
+3. Sign-up unavailable state.
+4. Forgot password.
+5. Reset password.
+6. Email verification.
+7. Verification code entry.
+8. Resend verification.
+9. Already signed in.
+10. Authentication not configured.
+11. Session loading.
+12. Sign-in required.
+13. Invitation sign-in.
+14. Invitation verification.
+15. Authentication error.
+
+## Login form
+
+Include:
+
+- Email.
+- Password.
+- Show/hide password.
+- Remember-me option if supported.
+- Forgot password.
+- Google sign-in.
+- Login button.
+- Registration link.
+- Terms and privacy links.
+
+## Registration form
+
+Include:
+
+- Full name.
+- Email.
+- Password.
+- Confirm password if appropriate.
+- Password visibility.
+- Password validation.
+- Google sign-up.
+- Terms acceptance.
+- Registration action.
+
+## Authentication principles
+
+The current platform uses Neon Managed Auth and Google OAuth.
+
+Do not introduce another authentication provider.
+
+Do not invent a different authentication architecture.
+
+Design the interface to connect to the existing authentication implementation.
+
+---
+
+# 11. ONBOARDING WIZARD
+
+This is a NEW required part of OppSift.
+
+Create a complete professional onboarding experience.
+
+The experience should be easy to follow, visually attractive and not unnecessarily long.
+
+Include a progress indicator and clear next/back controls.
+
+## Step 1 — Welcome
+
+- Welcome to OppSift.
+- Explain what the platform does.
+- Explain what the user will configure.
+
+## Step 2 — Account type
+
+Allow the user to identify their working context:
+
+- Individual.
+- Business.
+- Organisation.
+- Consultant.
+- Other.
+
+## Step 3 — Organisation information
+
+Where applicable:
+
+- Organisation name.
+- Website.
+- Country.
+- Organisation description.
+- Industry.
+- Organisation size.
+
+Allow individuals to skip organisation-specific fields.
+
+## Step 4 — Geographic preferences
+
+Include:
+
+- Primary operating country.
+- Countries of interest.
+- Regions of interest.
+- International opportunity preferences.
+
+Use searchable country selection.
+
+## Step 5 — Opportunity interests
+
+Include:
+
+- Government contracts.
+- Tenders.
+- RFPs.
+- Grants.
+- Funding.
+- Commercial opportunities.
+- Other supported categories.
+
+## Step 6 — Industry and sector
+
+Include searchable sectors and industry preferences.
+
+## Step 7 — Business capabilities
+
+Allow users to describe:
+
+- Services.
+- Products.
+- Expertise.
+- Experience.
+- Certifications.
+- Relevant capabilities.
+
+## Step 8 — Matching preferences
+
+Configure:
+
+- Opportunity categories.
+- Country preferences.
+- Sector preferences.
+- Deadline preferences.
+- Minimum and maximum values where applicable.
+
+## Step 9 — Notifications
+
+Allow configuration of:
+
+- New matching opportunities.
+- Deadline reminders.
+- Opportunity amendments.
+- Important updates.
+
+## Step 10 — Completion
+
+Show:
+
+- Profile completion.
+- Selected preferences.
+- Confirmation.
+- Go to dashboard action.
+
+Onboarding must be skippable where appropriate, resumable and connected to the user's real saved profile.
+
+Do not require users to supply information that is unnecessary for basic product access.
+
+---
+
+# 12. AUTHENTICATED WORKSPACE
+
+Design the following screens.
+
+All screens must use the same application shell.
+
+## 12.1 Dashboard — /dashboard
+
+This is the most important authenticated screen.
+
+Reproduce the overall layout and visual character of the uploaded dashboard reference.
+
+However, replace generic financial dashboard content with real opportunity intelligence.
+
+### Top section
+
+- Greeting.
+- User context.
+- Global opportunity search.
+- Quick actions.
+
+### Key metrics
+
+Create cards for:
+
+- Available opportunities.
+- New opportunities.
+- Matching opportunities.
+- Saved opportunities.
+- Upcoming deadlines.
+
+Each card should support meaningful trends when real data is available.
+
+### Main dashboard content
+
+Create:
+
+- Opportunity discovery trends.
+- Opportunities by country.
+- Opportunities by category.
+- Opportunities by sector.
+- Recently published opportunities.
+- Best-matching opportunities.
+- Upcoming deadlines.
+- Recent activity.
+- Source freshness.
+- Global coverage overview.
+
+### Dashboard layout
+
+Use the reference image's visual hierarchy:
+
+- Burgundy sidebar.
+- Horizontal top bar.
+- Metric cards.
+- Main analytics area.
+- Secondary information panels.
+- Recent activity.
+- Clean spacing.
+
+Do not copy financial transactions, credit cards or banking content from the reference.
+
+This is an opportunity intelligence platform.
+
+---
+
+## 12.2 Opportunity Explorer — /discover
+
+Create a professional global discovery interface.
+
+Include:
+
+- Global search.
+- Search suggestions.
+- Advanced filters.
+- Results count.
+- Sorting.
+- Country filters.
+- Opportunity category filters.
+- Sector filters.
+- Publication date.
+- Deadline.
+- Issuing organisation.
+- Estimated value where available.
+- Eligibility.
+- Source.
+- Saved search action.
+
+Provide card and table views.
+
+Each opportunity result must communicate the most important information immediately.
+
+## 12.3 Government Contracts — /discover/government
+
+Show government procurement opportunities.
+
+Include:
+
+- Tender title.
+- Issuing agency.
+- Country.
+- Reference number.
+- Deadline.
+- Publication date.
+- Contract value where available.
+- Source.
+- Status.
+
+## 12.4 Grants and Funding — /discover/grants
+
+Show:
+
+- Grant title.
+- Funding organisation.
+- Country.
+- Funding amount where available.
+- Beneficiary type.
+- Eligibility.
+- Deadline.
+- Source.
+
+## 12.5 Commercial Opportunities — /discover/commercial
+
+Show:
+
+- Opportunity title.
+- Company or issuing organisation.
+- Country.
+- Sector.
+- Opportunity type.
+- Estimated value where available.
+- Deadline.
+- Source.
+
+## 12.6 Search Results — /discover/search
+
+Include:
+
+- Query.
+- Search filters.
+- Search results.
+- Sorting.
+- Pagination.
+- Save search.
+- Empty and error states.
+
+## 12.7 Country Discovery — /discover/country/\:code
+
+Include:
+
+- Country overview.
+- Available categories.
+- Relevant opportunities.
+- Sources.
+- Sector distribution.
+- Coverage status.
+- Search and filters.
+
+Do not fabricate country statistics.
+
+---
+
+# 13. OPPORTUNITY DETAILS AND INTELLIGENCE
+
+## 13.1 Opportunity details — /opportunity/\:id
+
+This must be one of the most polished pages in OppSift.
+
+Create:
+
+HEADER:
+
+- Opportunity title.
+- Category.
+- Country.
+- Issuing organisation.
+- Deadline.
+- Save button.
+- Source link.
+
+OVERVIEW:
+
+- Description.
+- Reference number.
+- Publication date.
+- Estimated value where available.
+- Location.
+- Opportunity status.
+
+SECTIONS OR TABS:
+
+1. Overview.
+2. Government / Grants / Commercial information as appropriate.
+3. Documents.
+4. Deadlines.
+5. Source and verification.
+6. History.
+7. Requirements.
+
+Include:
+
+- Original source attribution.
+- Last verified date.
+- Amendment history.
+- Required documents.
+- Application instructions.
+- Eligibility information.
+
+Make the information easy to scan.
+
+## 13.2 Eligibility analysis
+
+Create an intelligence panel that presents:
+
+- Eligibility status.
+- Matching requirements.
+- Potential disqualifiers.
+- Missing information.
+- Supporting evidence.
+- Explanation of the assessment.
+
+Distinguish confirmed eligibility from unknown or unverified information.
+
+Never represent an AI-generated assessment as a guaranteed official decision.
+
+---
+
+# 14. PERSONAL OPPORTUNITY WORKSPACE
+
+## 14.1 Saved Opportunities — /saved
+
+Include:
+
+- Saved list.
+- Search.
+- Filters.
+- Saved date.
+- Deadline.
+- Status.
+- Remove action.
+- Open details.
+
+## 14.2 Saved Searches — /saved-searches
+
+Include:
+
+- Search name.
+- Query.
+- Filters.
+- Last checked.
+- Matching opportunities.
+- Edit.
+- Delete.
+- Notification preferences.
+
+## 14.3 Search History — /search-history
+
+Include:
+
+- Previous queries.
+- Search dates.
+- Applied filters.
+- Repeat search.
+- Clear history.
+
+## 14.4 My Opportunities — /my-opportunities
+
+Create a personal opportunity pipeline.
+
+Include:
+
+- List view.
+- Card view.
+- Table view.
+- Kanban view.
+
+Opportunity stages:
+
+- Interested.
+- Evaluating.
+- Preparing.
+- Submitted.
+- Won.
+- Lost.
+- Archived.
+
+Include:
+
+- Notes.
+- Tasks.
+- Milestones.
+- Deadlines.
+- Progress indicators.
+
+## 14.5 Opportunity Preparation — /my-opportunities/\:id
+
+Include:
+
+- Opportunity summary.
+- Preparation checklist.
+- Tasks.
+- Documents.
+- Notes.
+- Milestones.
+- Deadlines.
+- Submission progress.
+
+Do not claim that OppSift submits applications automatically unless that functionality actually exists.
+
+---
+
+# 15. AI INTELLIGENCE — /intelligence
+
+Create a premium AI intelligence workspace.
+
+Include:
+
+- Intelligence overview.
+- Opportunity analysis.
+- Eligibility interpretation.
+- Requirements extraction.
+- Opportunity comparison.
+- Risk indicators.
+- Evidence references.
+- Confidence indicators.
+- AI-generated explanations.
+
+The interface must make it clear when information comes from an original source and when it is AI interpretation.
+
+Do not invent an AI chat backend or pretend analysis has been completed when it has not.
+
+---
+
+# 16. ALERTS AND NOTIFICATIONS
+
+## 16.1 Alerts — /alerts
+
+Include:
+
+- Active monitoring.
+- Saved-search alerts.
+- Matching opportunity alerts.
+- Deadline alerts.
+- Amendment alerts.
+- Source updates.
+- Alert configuration.
+
+## 16.2 Notifications centre
+
+Create a dedicated notification page and notification popover.
+
+Include:
+
+- New matching opportunities.
+- Upcoming deadlines.
+- Amendments.
+- Eligibility changes.
+- System notifications.
+- Read/unread states.
+- Mark all as read.
+- Notification settings.
+
+Use genuine events where available.
+
+---
+
+# 17. ANALYTICS AND REPORTS
+
+## 17.1 Analytics — /analytics
+
+Create a serious global intelligence analytics interface.
+
+Include:
+
+- Global opportunity distribution.
+- Country analysis.
+- Sector analysis.
+- Opportunity categories.
+- Publication trends.
+- Deadline analysis.
+- Value distribution where available.
+- Source coverage.
+- Matching performance.
+
+Use professional charts.
+
+## 17.2 Reports
+
+Create a dedicated reports experience.
+
+Include:
+
+- Report overview.
+- Country reports.
+- Sector reports.
+- Opportunity reports.
+- Eligibility summaries.
+- Saved reports.
+- Report history.
+- Export controls.
+
+Support export formats where implemented.
+
+Do not fabricate analytics or reports.
+
+---
+
+# 18. ORGANISATIONS AND TEAMS
+
+## 18.1 Organisations — /teams
+
+Include:
+
+- Organisation overview.
+- Organisation details.
+- Members.
+- Invitations.
+- Roles.
+- Permissions.
+- Shared opportunity collections.
+
+## 18.2 Invitation acceptance — /accept-invitation
+
+Include:
+
+- Invitation details.
+- Inviting organisation.
+- Role.
+- Accept.
+- Decline.
+- Sign-in and verification gates.
+
+## 18.3 Organisation member management
+
+Include:
+
+- Member list.
+- Roles.
+- Invitations.
+- Pending invitations.
+- Permission management.
+
+Respect actual backend permissions.
+
+---
+
+# 19. PROFILE AND SETTINGS
+
+## 19.1 Profile settings — /settings
+
+Include:
+
+- Personal details.
+- Profile image.
+- Professional information.
+- Country.
+- Industry.
+- Opportunity interests.
+- Organisation information.
+- Profile completeness.
+
+## 19.2 Appearance settings
+
+Include:
+
+- Dark mode.
+- Light mode.
+- System theme.
+- Interface preferences.
+
+## 19.3 Notification settings
+
+Include:
+
+- Email notifications.
+- In-app notifications.
+- Deadline reminders.
+- Matching alerts.
+- Frequency preferences.
+
+## 19.4 Security settings
+
+Include:
+
+- Authentication information.
+- Password management where supported.
+- Session information where supported.
+- Account security.
+- Sign-out.
+
+---
+
+# 20. ADMINISTRATION AND PLATFORM OPERATIONS
+
+These are protected administrative screens.
+
+Create a separate, professional administration experience.
+
+## 20.1 Administration overview
+
+Include:
+
+- Platform overview.
+- Data ingestion health.
+- Opportunity records.
+- Active sources.
+- Coverage.
+- Data quality.
+- Recent system activity.
+
+## 20.2 Source registry
+
+Include:
+
+- Source name.
+- Country.
+- Source type.
+- Connection status.
+- Data access method.
+- Last successful collection.
+- Last error.
+- Configuration.
+
+## 20.3 Country coverage
+
+Include:
+
+- Supported countries.
+- Available categories.
+- Active sources.
+- Coverage status.
+- Last collection.
+- Data freshness.
+
+## 20.4 Ingestion monitoring
+
+Include:
+
+- Collection jobs.
+- Job status.
+- Processing history.
+- Failed jobs.
+- Error details.
+- Retry actions where authorised.
+
+## 20.5 Data quality
+
+Include:
+
+- Duplicate detection.
+- Missing information.
+- Validation status.
+- Source attribution.
+- Data freshness.
+- Quality indicators.
+
+Do not expose administrative screens to ordinary users.
+
+Do not create fake administration data.
+
+---
+
+# 21. INTEGRATIONS
+
+Create a dedicated integrations screen.
+
+Include:
+
+- Available integrations.
+- Connected services.
+- Connection status.
+- Configuration.
+- Permissions.
+- Disconnect actions.
+
+Use clear cards and connection indicators.
+
+Only show integrations that the actual platform supports.
+
+---
+
+# 22. SUBSCRIPTION AND BILLING
+
+Create:
+
+- Subscription overview.
+- Current plan.
+- Usage.
+- Feature limits.
+- Available plans.
+- Upgrade interface.
+- Billing history.
+- Payment methods where supported.
+- Subscription management.
+
+Make the design ready for real payment integration.
+
+Do not invent successful payment transactions.
+
+---
+
+# 23. HELP AND SUPPORT
+
+Create a complete support centre.
+
+Include:
+
+- Searchable help centre.
+- Getting started.
+- Opportunity discovery guides.
+- Account assistance.
+- Frequently asked questions.
+- Contact support.
+- Support request form.
+- Documentation navigation.
+
+---
+
+# 24. GLOBAL APPLICATION STATES
+
+Create reusable states for:
+
+- Initial loading.
+- Authentication loading.
+- Empty results.
+- No saved opportunities.
+- No notifications.
+- No search history.
+- No available analytics.
+- Source unavailable.
+- Network failure.
+- Permission denied.
+- Session expired.
+- Page not found.
+- Server error.
+- Successful operation.
+- Validation error.
+- Confirmation dialog.
+
+Every screen must have a thoughtful state for when there is no data.
+
+Do not use fabricated records to hide empty states.
+
+---
+
+# 25. INTERNATIONALISATION AND GLOBAL READINESS
+
+Design the interface to support:
+
+- Multiple countries.
+- International currencies.
+- Different date formats.
+- Different time zones.
+- Long organisation names.
+- Different languages.
+- Country flags where useful.
+- International phone numbers.
+- International addresses.
+
+Do not hardcode Kenya as the default global identity.
+
+Do not assume every opportunity uses USD.
+
+Allow the frontend to receive country, currency, locale and time-zone information from the actual application.
+
+---
+
+# 26. TECHNICAL STACK AND CODE REQUIREMENTS
+
+The existing OppSift application uses:
+
+- React.
+- TypeScript.
+- Vite.
+- Cloudflare Pages.
+- Neon PostgreSQL.
+- Neon Managed Auth.
+- Google OAuth.
+- Existing API and service modules.
+
+The generated frontend must match this technology foundation.
+
+## Strict rules
+
+1. Use React and TypeScript.
+2. Use reusable functional components.
+3. Use the existing Vite application architecture.
+4. Preserve the existing router and route semantics.
+5. Reuse the existing styling dependencies and design infrastructure where possible.
+6. Do not introduce a different frontend framework.
+7. Do not introduce a replacement backend.
+8. Do not introduce Supabase.
+9. Do not introduce Better Auth.
+10. Do not replace Neon Managed Auth.
+11. Do not create a second authentication system.
+12. Do not hardcode secrets or API keys.
+13. Do not duplicate backend business logic.
+14. Do not create fake production API integrations.
+15. Do not remove existing production service contracts.
+
+The actual repository's package.json and master context documentation are the authoritative sources for dependency versions and installed libraries.
+
+If Stitch cannot access the repository, generate React + TypeScript-compatible frontend components and clearly identify any dependency assumptions. Do not silently assume that an unavailable library exists.
+
+## Component organisation
+
+Use a consistent architecture:
+
+- Shared application shell.
+- Public website layout.
+- Authentication layout.
+- Onboarding layout.
+- Dashboard layout.
+- Reusable navigation.
+- Shared forms.
+- Shared cards.
+- Shared tables.
+- Shared filters.
+- Shared charts.
+- Shared dialogs.
+- Shared theme provider.
+- Page-specific components.
+
+Avoid creating one enormous component containing the entire application.
+
+## Backend integration boundary
+
+Frontend screens should accept real data through clear props, typed interfaces, existing service modules or API adapters.
+
+Keep demo fixtures separate from production data.
+
+Never disguise mock data as real production data.
+
+The generated UI must be ready for the existing Neon database and authentication services to be connected by the implementation agent.
+
+---
+
+# 27. INTERACTIONS AND FUNCTIONALITY
+
+Do not generate static screenshots alone.
+
+Build working frontend interactions wherever supported:
+
+- Navigation.
+- Dropdowns.
+- Sidebar collapse.
+- Theme switching.
+- Tabs.
+- Search input.
+- Search filters.
+- Sorting.
+- Pagination.
+- Form validation.
+- Modal dialogs.
+- Save buttons.
+- Notification interactions.
+- Onboarding progression.
+- Responsive navigation.
+- View switching.
+- Expandable panels.
+- Loading states.
+- Error states.
+
+For interactions that require backend services, provide clear integration boundaries.
+
+Do not claim that a frontend interaction has saved information to Neon when no backend connection exists.
+
+---
+
+# 28. RESPONSIVE DESIGN AND ACCESSIBILITY
+
+Support:
+
+- Large desktop.
+- Standard desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Use responsive layouts rather than fixed-width desktop designs.
+
+Ensure:
+
+- Keyboard accessibility.
+- Visible focus.
+- Readable contrast.
+- Accessible form labels.
+- Proper button semantics.
+- Screen-reader-friendly structure.
+- Responsive tables.
+- Proper mobile touch targets.
+
+---
+
+# 29. DESIGN AND GENERATION WORKFLOW
+
+Generate the application as a connected family of screens, not unrelated designs.
+
+Use this order:
+
+PHASE 1 — BRAND FOUNDATION
+
+- Logo.
+- Brand symbol.
+- Wordmark.
+- Colour tokens.
+- Typography.
+- Icons.
+- Component library.
+- Dark theme.
+- Light theme.
+
+PHASE 2 — PUBLIC EXPERIENCE
+
+- Homepage.
+- Product.
+- Opportunities.
+- Markets.
+- Sources.
+- Solutions.
+- How it works.
+- About.
+- Contact.
+- Pricing.
+
+PHASE 3 — AUTHENTICATION
+
+- Login.
+- Registration.
+- Password recovery.
+- Email verification.
+- Authentication states.
+
+PHASE 4 — ONBOARDING
+
+- Welcome.
+- Account type.
+- Organisation.
+- Geography.
+- Interests.
+- Capabilities.
+- Matching preferences.
+- Notifications.
+- Completion.
+
+PHASE 5 — MAIN WORKSPACE
+
+- Dashboard.
+- Discovery.
+- Government.
+- Grants.
+- Commercial.
+- Search results.
+- Country discovery.
+- Opportunity details.
+
+PHASE 6 — PERSONAL WORKSPACE
+
+- Saved opportunities.
+- Saved searches.
+- Search history.
+- My Opportunities.
+- Opportunity preparation.
+
+PHASE 7 — INTELLIGENCE AND MONITORING
+
+- AI intelligence.
+- Alerts.
+- Notifications.
+- Analytics.
+- Reports.
+
+PHASE 8 — ORGANISATIONS AND ACCOUNT
+
+- Organisations.
+- Teams.
+- Invitations.
+- Profile.
+- Settings.
+- Appearance.
+- Security.
+
+PHASE 9 — OPERATIONS AND ADMIN
+
+- Administration.
+- Source registry.
+- Country coverage.
+- Ingestion monitoring.
+- Data quality.
+
+PHASE 10 — COMMERCIAL AND SUPPORT
+
+- Integrations.
+- Subscription.
+- Billing.
+- Help centre.
+- Support.
+
+PHASE 11 — FINAL POLISH
+
+- Responsive testing.
+- Accessibility.
+- Navigation consistency.
+- Dark/light theme consistency.
+- Loading and error states.
+- Component cleanup.
+
+If the tool has generation limits, complete the phases in separate connected batches while preserving the same design system and component conventions.
+
+Do not reduce the quality of later screens because the first screens received more attention.
+
+---
+
+# 30. FINAL QUALITY STANDARD
+
+The finished OppSift experience must look like a serious global SaaS intelligence company.
+
+The interface must be:
+
+- Distinctive.
+- Premium.
+- Modern.
+- Professional.
+- International.
+- Easy to understand.
+- Easy to navigate.
+- Data-focused.
+- Consistent.
+- Responsive.
+- Accessible.
+
+The burgundy identity must be recognisable immediately.
+
+The uploaded reference image must remain the main visual direction.
+
+The dashboard must look closely related to that reference while presenting opportunity intelligence rather than banking information.
+
+The logo must be original and recognisable.
+
+The public website, authentication, onboarding and workspace must feel like one unified product.
+
+Do not settle for generic SaaS templates.
+
+Do not invent product capabilities.
+
+Do not produce a beautiful but disconnected collection of screens.
+
+Build a coherent frontend that can be integrated into the existing OppSift production application.
+
+FINAL DELIVERABLES:
+
+1. Original OppSift logo and brand assets.
+2. Complete brand design system.
+3. Dark theme.
+4. Light theme.
+5. Public website screens.
+6. Authentication screens.
+7. Complete onboarding wizard.
+8. All authenticated workspace screens.
+9. Administration screens.
+10. Integrations and billing screens.
+11. Help and support screens.
+12. Responsive layouts.
+13. Reusable React + TypeScript-compatible components.
+14. Working frontend interactions.
+15. Clear component and route organisation.
+16. Clear integration boundaries for existing production services.
+
+OPPSIFT SHOULD NOT LOOK LIKE A TEMPLATE.
+
+IT SHOULD LOOK LIKE OPPSIFT.
