@@ -21,7 +21,6 @@ import {
   X,
 } from 'lucide-react';
 import { WorkspaceLayout } from '../../components/layout/WorkspaceLayout';
-import { CinematicVideoBackdrop } from '../../components/media/CinematicVideoBackdrop';
 import { CategorySplitRing, DiscoveryTrendChart, HorizontalBarChart } from '../../components/ui/Charts';
 import { EmptyStatePanel } from '../../components/ui/StateViews';
 import { useAppState } from '../../context/AppStateContext';
@@ -128,7 +127,7 @@ export function IntelligenceWorkspacePage() {
     <WorkspaceLayout title="AI Intelligence Research Workspace" breadcrumb="Intelligence / Research & Eligibility">
       <div className="space-y-6">
         {/* Workspace Header + Selector + Boundary Notice */}
-        <div className="p-4 rounded-2xl oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-3 text-xs">
+        <div className="p-4 rounded-lg oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-3 text-xs">
           <div className="flex items-start gap-2.5">
             <Sparkles className="w-4 h-4 text-[#A33B59] dark:text-[#E8A4B5] shrink-0 mt-0.5" />
             <p className="text-[#64748B] dark:text-[#CBD5E1]">
@@ -154,7 +153,7 @@ export function IntelligenceWorkspacePage() {
         </div>
 
         {/* 8-Module Navigation Strip */}
-        <div className="flex items-center gap-1.5 p-1.5 rounded-2xl oppsift-card max-w-full overflow-x-auto no-print">
+        <div className="flex items-center gap-1.5 p-1.5 rounded-lg oppsift-card max-w-full overflow-x-auto no-print">
           {modules.map((m) => (
             <button
               key={m.id}
@@ -217,7 +216,7 @@ export function IntelligenceWorkspacePage() {
                   key={tool.tab}
                   type="button"
                   onClick={() => setActiveTab(tool.tab)}
-                  className="text-left p-5 rounded-2xl oppsift-card hover:border-[#A33B59] transition-colors space-y-2"
+                  className="text-left p-5 rounded-lg oppsift-card hover:border-[#A33B59] transition-colors space-y-2"
                 >
                   <div className="w-9 h-9 rounded-xl bg-[#F8FAFC] dark:bg-white/8 flex items-center justify-center">
                     {tool.icon}
@@ -229,7 +228,7 @@ export function IntelligenceWorkspacePage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-              <div className="lg:col-span-7 p-5 rounded-2xl oppsift-card space-y-3 min-w-0">
+              <div className="lg:col-span-7 p-5 rounded-lg oppsift-card space-y-3 min-w-0">
                 <h3 className="font-display text-base font-semibold">Recent &amp; Saved Analyses</h3>
                 <div className="divide-y divide-[#E2E8F0] dark:divide-white/8">
                   {savedAnalyses.map((an) => (
@@ -266,7 +265,7 @@ export function IntelligenceWorkspacePage() {
                 </div>
               </div>
 
-              <div className="lg:col-span-5 p-5 rounded-2xl oppsift-card space-y-4 min-w-0">
+              <div className="lg:col-span-5 p-5 rounded-lg oppsift-card space-y-4 min-w-0">
                 <h3 className="font-display text-base font-semibold">Workspace Analysis Quota &amp; Tasks</h3>
                 <div className="p-3.5 rounded-xl bg-[#F8FAFC] dark:bg-white/6 border border-[#E2E8F0] dark:border-white/10 text-xs space-y-1">
                   <p className="font-semibold">Monthly AI Briefs Used: <span className="font-mono">8 / 250</span></p>
@@ -298,7 +297,7 @@ export function IntelligenceWorkspacePage() {
         {/* Module B: Detailed Opportunity Intelligence Analysis */}
         {activeTab === 'analysis' && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-7 p-6 rounded-2xl oppsift-card space-y-5 text-xs min-w-0">
+            <div className="lg:col-span-7 p-6 rounded-lg oppsift-card space-y-5 text-xs min-w-0">
               <div>
                 <p className="font-mono text-[#A33B59] dark:text-[#E8A4B5] font-semibold">
                   {primary.referenceNumber} · {primary.category} · {primary.countryName}
@@ -359,7 +358,7 @@ export function IntelligenceWorkspacePage() {
             </div>
 
             <div className="lg:col-span-5 space-y-5 min-w-0">
-              <div className="p-6 rounded-2xl oppsift-card space-y-3 text-xs">
+              <div className="p-6 rounded-lg oppsift-card space-y-3 text-xs">
                 <h3 className="font-display text-base font-semibold">Required Documents ({primary.documents.length})</h3>
                 {primary.documents.map((doc) => (
                   <div key={doc.id} className="p-3 rounded-xl border border-[#E2E8F0] dark:border-white/10 flex items-center justify-between">
@@ -376,7 +375,7 @@ export function IntelligenceWorkspacePage() {
                 ))}
               </div>
 
-              <div className="p-6 rounded-2xl oppsift-card space-y-3 text-xs">
+              <div className="p-6 rounded-lg oppsift-card space-y-3 text-xs">
                 <h3 className="font-display text-base font-semibold">Missing Information &amp; Source Citations</h3>
                 {primary.eligibility.missingInformation.length === 0 ? (
                   <p className="text-[#16A34A]">No missing profile fields flagged.</p>
@@ -400,7 +399,7 @@ export function IntelligenceWorkspacePage() {
         {/* Module C: Eligibility Intelligence Matrix */}
         {activeTab === 'eligibility' && (
           <div className="space-y-5">
-            <div className="p-6 rounded-2xl oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div className="p-6 rounded-lg oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-4">
               <div>
                 <p className="text-xs font-semibold text-[#A33B59] dark:text-[#E8A4B5]">
                   Profile Comparison: {onboarding.organisationName} vs {primary.referenceNumber}
@@ -420,7 +419,7 @@ export function IntelligenceWorkspacePage() {
               </div>
             </div>
 
-            <div className="overflow-x-auto rounded-2xl oppsift-card">
+            <div className="overflow-x-auto rounded-lg oppsift-card">
               <table className="w-full text-left text-xs">
                 <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
                   <tr>
@@ -464,7 +463,7 @@ export function IntelligenceWorkspacePage() {
               </table>
             </div>
 
-            <div className="p-5 rounded-2xl oppsift-card space-y-2 text-xs">
+            <div className="p-5 rounded-lg oppsift-card space-y-2 text-xs">
               <h3 className="font-display text-sm font-semibold">Recommended Verification Steps</h3>
               <ul className="space-y-1.5 text-[#64748B] dark:text-[#CBD5E1]">
                 {primary.eligibility.recommendedNextSteps.map((s) => (
@@ -481,7 +480,7 @@ export function IntelligenceWorkspacePage() {
         {/* Module D: Requirements Extraction */}
         {activeTab === 'extraction' && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-4 p-5 rounded-2xl oppsift-card space-y-3 text-xs min-w-0">
+            <div className="lg:col-span-4 p-5 rounded-lg oppsift-card space-y-3 text-xs min-w-0">
               <h2 className="font-display text-base font-semibold">Indexed Documents ({primary.documents.length})</h2>
               <button
                 type="button"
@@ -513,7 +512,7 @@ export function IntelligenceWorkspacePage() {
               ))}
             </div>
 
-            <div className="lg:col-span-8 p-6 rounded-2xl oppsift-card space-y-4 text-xs min-w-0">
+            <div className="lg:col-span-8 p-6 rounded-lg oppsift-card space-y-4 text-xs min-w-0">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <h2 className="font-display text-base font-semibold">Categorised Requirement Breakdown</h2>
                 <div className="flex flex-wrap gap-1">
@@ -556,7 +555,7 @@ export function IntelligenceWorkspacePage() {
         {/* Module E: Risk & Suitability */}
         {activeTab === 'risks' && (
           <div className="space-y-4">
-            <div className="p-5 rounded-2xl oppsift-card text-xs">
+            <div className="p-5 rounded-lg oppsift-card text-xs">
               <h2 className="font-display text-base font-bold">Risk, Blocker &amp; Completeness Register</h2>
               <p className="text-[#64748B] dark:text-[#CBD5E1] mt-1">
                 Explicitly marks whether each risk comes from a verified notice clause or AI-assisted suitability inference.
@@ -564,7 +563,7 @@ export function IntelligenceWorkspacePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {primary.eligibility.riskObservations.map((r, idx) => (
-                <div key={idx} className="p-5 rounded-2xl oppsift-card space-y-2 text-xs">
+                <div key={idx} className="p-5 rounded-lg oppsift-card space-y-2 text-xs">
                   <div className="flex items-center justify-between">
                     <span className="font-semibold flex items-center gap-1.5">
                       <ShieldAlert className={`w-4 h-4 ${r.severity === 'High' ? 'text-[#DC2626]' : 'text-[#D97706]'}`} />
@@ -587,7 +586,7 @@ export function IntelligenceWorkspacePage() {
         {/* Module F: Enterprise AI Research Workspace */}
         {activeTab === 'research' && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-4 p-5 rounded-2xl oppsift-card space-y-4 text-xs min-w-0">
+            <div className="lg:col-span-4 p-5 rounded-lg oppsift-card space-y-4 text-xs min-w-0">
               <h2 className="font-display text-base font-semibold">Research Context</h2>
               <div className="p-3.5 rounded-xl bg-[#F8FAFC] dark:bg-white/6 border border-[#E2E8F0] dark:border-white/10 space-y-1">
                 <p className="font-mono text-[#A33B59] dark:text-[#E8A4B5]">{primary.referenceNumber}</p>
@@ -613,7 +612,7 @@ export function IntelligenceWorkspacePage() {
               </div>
             </div>
 
-            <div className="lg:col-span-8 rounded-2xl oppsift-card flex flex-col overflow-hidden min-h-[420px] min-w-0">
+            <div className="lg:col-span-8 rounded-lg oppsift-card flex flex-col overflow-hidden min-h-[420px] min-w-0">
               <div className="px-5 py-3.5 border-b border-[#E2E8F0] dark:border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs">
                 <span className="font-display font-semibold text-sm">Structured Opportunity Q&amp;A</span>
                 <span className="text-[#64748B] dark:text-[#CBD5E1]">Requires Gemini API backend for live inference</span>
@@ -622,7 +621,7 @@ export function IntelligenceWorkspacePage() {
                 {chatHistory.map((m) => (
                   <div
                     key={m.id}
-                    className={`p-4 rounded-2xl text-xs space-y-2 ${
+                    className={`p-4 rounded-lg text-xs space-y-2 ${
                       m.role === 'user'
                         ? 'ml-2 sm:ml-8 bg-[#541B32] text-white'
                         : 'mr-2 sm:mr-8 bg-[#F8FAFC] dark:bg-white/6 border border-[#E2E8F0] dark:border-white/10'
@@ -687,7 +686,7 @@ export function IntelligenceWorkspacePage() {
 
         {/* Module G: Side-by-Side Comparison */}
         {activeTab === 'compare' && (
-          <section className="p-6 rounded-2xl oppsift-card space-y-4">
+          <section className="p-6 rounded-lg oppsift-card space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
                 <h2 className="font-display text-base font-semibold">Side-by-Side Intelligence Comparison</h2>
@@ -753,7 +752,7 @@ export function IntelligenceWorkspacePage() {
 
         {/* Module H: Printable Analysis Report */}
         {activeTab === 'report' && (
-          <div className="p-8 rounded-2xl oppsift-card space-y-6">
+          <div className="p-8 rounded-lg oppsift-card space-y-6">
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#E2E8F0] dark:border-white/10 pb-4">
               <div>
                 <p className="text-xs font-mono text-[#A33B59] dark:text-[#E8A4B5]">OPPSIFT EXECUTIVE INTELLIGENCE BRIEF</p>
@@ -848,7 +847,7 @@ export function AlertsMonitoringPage() {
   return (
     <WorkspaceLayout title="Alerts & Active Monitoring" breadcrumb="Monitoring / Alerts">
       <div className="space-y-6">
-        <div className="p-5 rounded-2xl oppsift-card flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="p-5 rounded-lg oppsift-card flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h2 className="font-display text-base font-semibold">Alert Rules &amp; Watchdogs</h2>
             <p className="text-xs text-[#64748B] dark:text-[#CBD5E1]">
@@ -867,7 +866,7 @@ export function AlertsMonitoringPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {alertRules.map((rule) => (
-            <div key={rule.id} className="p-5 rounded-2xl oppsift-card space-y-3">
+            <div key={rule.id} className="p-5 rounded-lg oppsift-card space-y-3">
               <div className="flex items-center justify-between text-xs">
                 <span className="font-semibold text-[#164E8B] dark:text-[#38BDF8]">{rule.triggerType}</span>
                 <span className={rule.status === 'Active' ? 'text-[#16A34A] font-semibold' : 'text-[#64748B] font-semibold'}>
@@ -898,7 +897,7 @@ export function AlertsMonitoringPage() {
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
             <form
               onSubmit={handleCreateRule}
-              className="w-full max-w-xl rounded-2xl border border-[#E2E8F0] dark:border-white/15 bg-white dark:bg-[#161224] p-6 space-y-4 shadow-2xl"
+              className="w-full max-w-xl rounded-lg border border-[#E2E8F0] dark:border-white/15 bg-white dark:bg-[#161224] p-6 space-y-4 shadow-2xl"
             >
               <div className="flex items-center justify-between">
                 <h3 className="font-display text-lg font-bold">Configure Monitoring Alert Rule</h3>
@@ -1098,7 +1097,7 @@ export function NotificationsCentrePage() {
           />
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-            <div className="lg:col-span-6 divide-y divide-[#E2E8F0] dark:divide-white/8 rounded-2xl oppsift-card overflow-hidden min-w-0">
+            <div className="lg:col-span-6 divide-y divide-[#E2E8F0] dark:divide-white/8 rounded-lg oppsift-card overflow-hidden min-w-0">
               {list.map((n) => (
                 <button
                   key={n.id}
@@ -1127,7 +1126,7 @@ export function NotificationsCentrePage() {
             </div>
 
             {activeNotif && (
-              <div className="lg:col-span-6 p-6 rounded-2xl oppsift-card space-y-4 min-w-0">
+              <div className="lg:col-span-6 p-6 rounded-lg oppsift-card space-y-4 min-w-0">
                 <div className="flex items-center justify-between text-xs text-[#64748B] dark:text-[#CBD5E1]">
                   <span className="font-semibold text-[#164E8B] dark:text-[#38BDF8]">{activeNotif.type} Event</span>
                   <span className="font-mono">{activeNotif.timestamp}</span>
@@ -1169,12 +1168,7 @@ export function AnalyticsPage() {
   return (
     <WorkspaceLayout title="Global, Country & Sector Analytics" breadcrumb="Analytics / Market Intelligence">
       <div className="space-y-6">
-        <CinematicVideoBackdrop
-          playlistIds={['global-markets', 'energy-sustainability', 'research-innovation']}
-          overlayTone="navy"
-          className="rounded-lg border border-[#E2E8F0] dark:border-white/10"
-          showControls={true}
-        >
+        <div className="rounded-lg oppsift-executive-card text-white border border-[#E2E8F0] dark:border-white/10">
           <div className="p-5 sm:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             <div>
               <p className="text-xs font-semibold text-[#38BDF8]">Market &amp; Sector Intelligence</p>
@@ -1196,7 +1190,7 @@ export function AnalyticsPage() {
               <option value="North America">North America</option>
             </select>
           </div>
-        </CinematicVideoBackdrop>
+        </div>
 
         <div className="oppsift-intel-rule pt-4 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-1 p-1 rounded-lg oppsift-card max-w-full overflow-x-auto">
@@ -1347,7 +1341,7 @@ export function ReportsPage() {
   return (
     <WorkspaceLayout title="Reporting Studio" breadcrumb="Analytics / Reports">
       <div className="space-y-6">
-        <div className="p-5 rounded-2xl oppsift-card space-y-4">
+        <div className="p-5 rounded-lg oppsift-card space-y-4">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             <div className="flex flex-wrap gap-1.5 p-1 rounded-xl bg-[#F1F5F9] dark:bg-white/6">
               {(['Country', 'Sector', 'Eligibility', 'Pipeline'] as const).map((t) => (
@@ -1423,7 +1417,7 @@ export function ReportsPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          <div className="lg:col-span-8 p-6 rounded-2xl oppsift-card space-y-4 min-w-0">
+          <div className="lg:col-span-8 p-6 rounded-lg oppsift-card space-y-4 min-w-0">
             <h2 className="font-display text-lg font-bold">{reportType} Intelligence Report ({scopedOpps.length} rows)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-xs">
@@ -1453,7 +1447,7 @@ export function ReportsPage() {
             </div>
           </div>
 
-          <div className="lg:col-span-4 p-6 rounded-2xl oppsift-card space-y-3 text-xs min-w-0">
+          <div className="lg:col-span-4 p-6 rounded-lg oppsift-card space-y-3 text-xs min-w-0">
             <h3 className="font-display text-base font-semibold">Saved &amp; Exported Reports</h3>
             <div className="space-y-2.5">
               {savedReports.map((rep) => (
@@ -1508,7 +1502,7 @@ export function MatchedOpportunitiesPage() {
   return (
     <WorkspaceLayout title="Matched for You" breadcrumb="Workspace / Matched Opportunities">
       <div className="space-y-6">
-        <div className="p-5 rounded-2xl oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-4 text-xs">
+        <div className="p-5 rounded-lg oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-4 text-xs">
           <div className="space-y-1 max-w-2xl">
             <p className="font-semibold text-[#A33B59] dark:text-[#E8A4B5]">
               Profile Calibration · {onboarding.organisationName}
@@ -1569,7 +1563,7 @@ export function MatchedOpportunitiesPage() {
             {matchedList.map(({ opp, inPreferredCountry, inPreferredSector, calibratedScore }) => {
               const isSaved = savedIds.includes(opp.id);
               return (
-                <article key={opp.id} className="p-5 rounded-2xl oppsift-card flex flex-col justify-between gap-4">
+                <article key={opp.id} className="p-5 rounded-lg oppsift-card flex flex-col justify-between gap-4">
                   <div className="space-y-2">
                     <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
                       <span className="font-mono font-bold text-[#541B32] dark:text-[#E8A4B5]">

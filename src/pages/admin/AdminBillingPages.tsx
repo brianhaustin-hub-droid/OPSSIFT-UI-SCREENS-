@@ -71,7 +71,7 @@ export function AdminBillingConsolePage({
     <WorkspaceLayout title="Financial & Billing Administration" breadcrumb={`Admin / Billing / ${section}`}>
       <div className="space-y-6">
         {!isAdminAuthorized ? (
-          <div className="p-10 rounded-2xl oppsift-card max-w-xl mx-auto text-center space-y-4">
+          <div className="p-10 rounded-lg oppsift-card max-w-xl mx-auto text-center space-y-4">
             <ShieldAlert className="w-10 h-10 mx-auto text-[#DC2626]" />
             <h2 className="font-display text-lg font-bold">Financial administration access restricted</h2>
             <p className="text-xs text-[#64748B] dark:text-[#CBD5E1] max-w-md mx-auto">
@@ -87,13 +87,13 @@ export function AdminBillingConsolePage({
           </div>
         ) : (
           <>
-            <div className="p-4 rounded-2xl oppsift-card flex flex-wrap items-center justify-between gap-3 text-xs">
+            <div className="p-4 rounded-lg oppsift-card flex flex-wrap items-center justify-between gap-3 text-xs">
               <p className="text-[#64748B] dark:text-[#CBD5E1]">
                 Protected financial operations console. All plan entitlement and pricing edits are logged to the administrative audit trail.
               </p>
             </div>
 
-            <div className="flex items-center gap-1.5 p-1.5 rounded-2xl oppsift-card max-w-full overflow-x-auto">
+            <div className="flex items-center gap-1.5 p-1.5 rounded-lg oppsift-card max-w-full overflow-x-auto">
               {navTabs.map((t) => (
                 <button
                   key={t.id}
@@ -117,7 +117,7 @@ export function AdminBillingConsolePage({
                     { label: 'Annual Recurring Revenue', value: '$0.00', note: 'Active annual contracts' },
                     { label: 'Payment Failure / Churn', value: `${failedTxCount} / ${cancelledCount}`, note: 'Failed charges / Cancellations' },
                   ].map((m) => (
-                    <div key={m.label} className="p-5 rounded-2xl oppsift-card space-y-1">
+                    <div key={m.label} className="p-5 rounded-lg oppsift-card space-y-1">
                       <p className="text-xs text-[#64748B] dark:text-[#CBD5E1]">{m.label}</p>
                       <p className="font-display text-2xl font-bold tabular-nums">{m.value}</p>
                       <p className="text-[11px] text-[#64748B] dark:text-[#94A3B8]">{m.note}</p>
@@ -125,7 +125,7 @@ export function AdminBillingConsolePage({
                   ))}
                 </div>
 
-                <div className="p-6 rounded-2xl oppsift-card space-y-3">
+                <div className="p-6 rounded-lg oppsift-card space-y-3">
                   <div className="flex items-center gap-2">
                     <TrendingUp className="w-4 h-4 text-[#A33B59] dark:text-[#E8A4B5]" />
                     <h2 className="font-display text-base font-semibold">Revenue Trends &amp; Cohort Settlement</h2>
@@ -138,7 +138,7 @@ export function AdminBillingConsolePage({
             )}
 
             {section === 'subscriptions' && (
-              <div className="overflow-x-auto rounded-2xl oppsift-card">
+              <div className="overflow-x-auto rounded-lg oppsift-card">
                 <table className="w-full text-left text-xs">
                   <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
                     <tr>
@@ -170,7 +170,7 @@ export function AdminBillingConsolePage({
             )}
 
             {section === 'transactions' && (
-              <div className="p-8 rounded-2xl oppsift-card text-center space-y-2">
+              <div className="p-8 rounded-lg oppsift-card text-center space-y-2">
                 <CreditCard className="w-8 h-8 mx-auto text-[#A33B59] dark:text-[#E8A4B5]" />
                 <h2 className="font-display text-base font-semibold">No payment transactions recorded</h2>
                 <p className="text-xs text-[#64748B] dark:text-[#CBD5E1] max-w-md mx-auto">
@@ -190,7 +190,7 @@ export function AdminBillingConsolePage({
 
             {section === 'plans' && (
               <div className="space-y-6">
-                <div className="overflow-x-auto rounded-2xl oppsift-card">
+                <div className="overflow-x-auto rounded-lg oppsift-card">
                   <table className="w-full text-left text-xs">
                     <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
                       <tr>
@@ -231,7 +231,7 @@ export function AdminBillingConsolePage({
                 </div>
 
                 {editingPlan && (
-                  <form onSubmit={handleSavePlanEdit} className="p-6 rounded-2xl oppsift-card space-y-4 text-xs">
+                  <form onSubmit={handleSavePlanEdit} className="p-6 rounded-lg oppsift-card space-y-4 text-xs">
                     <h3 className="font-display text-base font-bold">Configure Plan: {editingPlan.name}</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       <div>
@@ -285,7 +285,7 @@ export function AdminBillingConsolePage({
             )}
 
             {section === 'coupons' && (
-              <div className="overflow-x-auto rounded-2xl oppsift-card">
+              <div className="overflow-x-auto rounded-lg oppsift-card">
                 <table className="w-full text-left text-xs">
                   <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
                     <tr>
@@ -317,7 +317,7 @@ export function AdminBillingConsolePage({
             )}
 
             {section === 'refunds' && (
-              <div className="p-8 rounded-2xl oppsift-card text-center space-y-2">
+              <div className="p-8 rounded-lg oppsift-card text-center space-y-2">
                 <RefreshCw className="w-8 h-8 mx-auto text-[#164E8B] dark:text-[#38BDF8]" />
                 <h2 className="font-display text-base font-semibold">No refunds or chargeback disputes</h2>
                 <p className="text-xs text-[#64748B] dark:text-[#CBD5E1] max-w-md mx-auto">
@@ -328,7 +328,7 @@ export function AdminBillingConsolePage({
               </div>
             )}
 
-            <div className="p-4 rounded-2xl oppsift-card flex flex-wrap items-center justify-between gap-2 text-xs text-[#64748B] dark:text-[#94A3B8]">
+            <div className="p-4 rounded-lg oppsift-card flex flex-wrap items-center justify-between gap-2 text-xs text-[#64748B] dark:text-[#94A3B8]">
               <span className="inline-flex items-center gap-1.5">
                 <FileSpreadsheet className="w-3.5 h-3.5" />
                 <span>Need platform ingestion or source coverage admin?</span>

@@ -80,7 +80,7 @@ export function OpportunityDetailPage({ opportunityId }: { opportunityId: string
         </div>
 
         {/* Opportunity Header + Persistent Action Panel */}
-        <section className="p-6 rounded-2xl oppsift-card space-y-5">
+        <section className="p-6 rounded-lg oppsift-card space-y-5">
           <div className="flex flex-col xl:flex-row xl:items-start justify-between gap-5">
             <div className="space-y-2 max-w-3xl">
               <div className="flex flex-wrap items-center gap-2 text-xs text-[#64748B] dark:text-[#CBD5E1]">
@@ -214,7 +214,7 @@ export function OpportunityDetailPage({ opportunityId }: { opportunityId: string
         {/* Main 2-column Dossier + Eligibility Panel */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           <div className="lg:col-span-7 space-y-4 min-w-0">
-            <div className="flex items-center gap-1 p-1.5 rounded-2xl oppsift-card max-w-full overflow-x-auto">
+            <div className="flex items-center gap-1 p-1.5 rounded-lg oppsift-card max-w-full overflow-x-auto">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
@@ -231,7 +231,7 @@ export function OpportunityDetailPage({ opportunityId }: { opportunityId: string
               ))}
             </div>
 
-            <div className="p-6 rounded-2xl oppsift-card space-y-5 text-sm">
+            <div className="p-6 rounded-lg oppsift-card space-y-5 text-sm">
               {activeTab === 'overview' && (
                 <>
                   <div>
@@ -433,7 +433,7 @@ export function OpportunityDetailPage({ opportunityId }: { opportunityId: string
 
           {/* Right Eligibility Intelligence Panel */}
           <aside className="lg:col-span-5 min-w-0">
-            <div className="p-6 rounded-2xl oppsift-card space-y-4 lg:sticky lg:top-20">
+            <div className="p-6 rounded-lg oppsift-card space-y-4 lg:sticky lg:top-20">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-[#A33B59] dark:text-[#E8A4B5]" />

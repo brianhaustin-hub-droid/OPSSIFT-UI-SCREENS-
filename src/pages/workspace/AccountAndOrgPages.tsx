@@ -36,7 +36,7 @@ export function TeamsOrganisationPage() {
   return (
     <WorkspaceLayout title="Organisations & Teams" breadcrumb="Organisation / Team Management">
       <div className="space-y-6">
-        <div className="p-6 rounded-2xl oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+        <div className="p-6 rounded-lg oppsift-card flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div>
             <p className="text-xs font-semibold text-[#A33B59] dark:text-[#E8A4B5]">Active Organisation</p>
             <h2 className="mt-1 font-display text-xl font-bold">{onboarding.organisationName}</h2>
@@ -71,7 +71,7 @@ export function TeamsOrganisationPage() {
           </form>
         </div>
 
-        <div className="flex items-center gap-1.5 p-1 rounded-2xl oppsift-card max-w-full overflow-x-auto">
+        <div className="flex items-center gap-1.5 p-1 rounded-lg oppsift-card max-w-full overflow-x-auto">
           {[
             { id: 'members' as const, label: 'Members & Shared Collections' },
             { id: 'org-settings' as const, label: 'Organisation Capabilities & Settings' },
@@ -91,7 +91,7 @@ export function TeamsOrganisationPage() {
 
         {orgTab === 'members' ? (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-8 overflow-x-auto rounded-2xl oppsift-card">
+            <div className="lg:col-span-8 overflow-x-auto rounded-lg oppsift-card">
               <table className="w-full text-left text-xs">
                 <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
                   <tr>
@@ -127,7 +127,7 @@ export function TeamsOrganisationPage() {
               </table>
             </div>
 
-            <div className="lg:col-span-4 p-5 rounded-2xl oppsift-card space-y-3">
+            <div className="lg:col-span-4 p-5 rounded-lg oppsift-card space-y-3">
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-[#164E8B] dark:text-[#38BDF8]" />
                 <h3 className="font-display text-base font-semibold">Shared Opportunity Collections</h3>
@@ -155,7 +155,7 @@ export function TeamsOrganisationPage() {
             </div>
           </div>
         ) : (
-          <div className="p-6 rounded-2xl oppsift-card space-y-4 max-w-3xl text-xs">
+          <div className="p-6 rounded-lg oppsift-card space-y-4 max-w-3xl text-xs">
             <h3 className="font-display text-base font-semibold">Organisation Capability &amp; Market Settings</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -246,7 +246,7 @@ export function AcceptInvitationPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center oppsift-workspace-canvas text-[#172033] dark:text-[#F8FAFC] p-4">
-      <div className="w-full max-w-lg rounded-2xl oppsift-card p-8 space-y-5 shadow-xl">
+      <div className="w-full max-w-lg rounded-lg oppsift-card p-8 space-y-5 shadow-xl">
         <p className="text-xs font-semibold text-[#A33B59] dark:text-[#E8A4B5]">Organisation Invitation</p>
         <h1 className="font-display text-2xl font-bold">Join Meridian Civic &amp; Cloud Advisory Ltd</h1>
         <div className="p-4 rounded-xl bg-[#F8FAFC] dark:bg-white/6 border border-[#E2E8F0] dark:border-white/10 text-xs space-y-1.5">
@@ -320,7 +320,7 @@ export function SettingsPage({
   breadcrumb?: string;
 } = {}) {
   const { navigate } = useRouter();
-  const { onboarding, updateOnboarding, pushToast, reduceBackgroundMotion, setReduceBackgroundMotion } = useAppState();
+  const { onboarding, updateOnboarding, pushToast } = useAppState();
   const { preference, setPreference } = useTheme();
   const [tab, setTab] = useState<'profile' | 'appearance' | 'notifications' | 'security' | 'account'>(initialTab);
   const [confirmAction, setConfirmAction] = useState<'deactivate' | 'delete' | null>(null);
@@ -344,7 +344,7 @@ export function SettingsPage({
     <WorkspaceLayout title={title} breadcrumb={breadcrumb}>
       <div className="space-y-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap gap-1.5 p-1.5 rounded-2xl oppsift-card max-w-full">
+          <div className="flex flex-wrap gap-1.5 p-1.5 rounded-lg oppsift-card max-w-full">
             {(['profile', 'appearance', 'notifications', 'security', 'account'] as const).map((t) => (
               <button
                 key={t}
@@ -394,7 +394,7 @@ export function SettingsPage({
 
         {tab === 'profile' && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-8 p-6 rounded-2xl oppsift-card space-y-4">
+            <div className="lg:col-span-8 p-6 rounded-lg oppsift-card space-y-4">
               <h2 className="font-display text-lg font-bold">Profile &amp; Organisation Details</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -452,7 +452,7 @@ export function SettingsPage({
               </button>
             </div>
 
-            <div className="lg:col-span-4 p-6 rounded-2xl oppsift-card space-y-4">
+            <div className="lg:col-span-4 p-6 rounded-lg oppsift-card space-y-4">
               <h3 className="font-display text-base font-semibold">Profile Completeness</h3>
               <p className="font-display text-3xl font-bold tabular-nums text-[#A33B59] dark:text-[#E8A4B5]">
                 {completenessPct}%
@@ -501,25 +501,11 @@ export function SettingsPage({
                 </button>
               ))}
             </div>
-            <label className="flex items-start justify-between gap-4 p-4 rounded-md border border-[#E2E8F0] dark:border-white/12 cursor-pointer hover:border-[#A33B59]/50">
-              <div>
-                <p className="font-display text-sm font-semibold">Reduce Background Video Motion</p>
-                <p className="text-xs text-[#64748B] dark:text-[#CBD5E1] mt-0.5">
-                  Pauses ambient hero and banner video playback across public and intelligence headers, displaying crisp static posters instead.
-                </p>
-              </div>
-              <input
-                type="checkbox"
-                checked={reduceBackgroundMotion}
-                onChange={(e) => setReduceBackgroundMotion(e.target.checked)}
-                className="mt-1 accent-[#541B32]"
-              />
-            </label>
           </div>
         )}
 
         {tab === 'notifications' && (
-          <div className="p-6 rounded-2xl oppsift-card space-y-4 max-w-2xl">
+          <div className="p-6 rounded-lg oppsift-card space-y-4 max-w-2xl">
             <h2 className="font-display text-lg font-bold">Notification Preferences</h2>
             {[
               { key: 'notifyNewMatches' as const, label: 'Email & In-App New Match Digests' },
@@ -540,7 +526,7 @@ export function SettingsPage({
         )}
 
         {tab === 'security' && (
-          <div className="p-6 rounded-2xl oppsift-card space-y-4 max-w-2xl">
+          <div className="p-6 rounded-lg oppsift-card space-y-4 max-w-2xl">
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-[#16A34A]" />
               <h2 className="font-display text-lg font-bold">Security &amp; Neon Managed Auth</h2>
@@ -572,7 +558,7 @@ export function SettingsPage({
         )}
 
         {tab === 'account' && (
-          <div className="p-6 rounded-2xl oppsift-card space-y-5 max-w-2xl">
+          <div className="p-6 rounded-lg oppsift-card space-y-5 max-w-2xl">
             <div className="flex items-center gap-2 text-[#DC2626]">
               <AlertTriangle className="w-5 h-5" />
               <h2 className="font-display text-lg font-bold">Account Lifecycle &amp; Governance</h2>

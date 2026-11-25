@@ -73,7 +73,7 @@ export function SubscriptionBillingPage() {
     <WorkspaceLayout title="Subscription & Billing" breadcrumb="Settings / Billing">
       <div className="space-y-6">
         {/* Sub-navigation across billing suite */}
-        <div className="flex items-center gap-1.5 p-1.5 rounded-2xl oppsift-card max-w-full overflow-x-auto">
+        <div className="flex items-center gap-1.5 p-1.5 rounded-lg oppsift-card max-w-full overflow-x-auto">
           {navSubTabs.map((t) => (
             <button
               key={t.route}
@@ -101,7 +101,7 @@ export function SubscriptionBillingPage() {
 
         {/* Pending Plan Change Notice */}
         {subscription.pendingPlanId && (
-          <div className="p-4 rounded-2xl oppsift-card border-[#164E8B]/35 flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div className="p-4 rounded-lg oppsift-card border-[#164E8B]/35 flex flex-wrap items-center justify-between gap-3 text-xs">
             <div>
               <p className="font-semibold text-[#164E8B] dark:text-[#38BDF8]">
                 Pending plan transition to {getPlanConfig(planCatalog, subscription.pendingPlanId).name}
@@ -122,7 +122,7 @@ export function SubscriptionBillingPage() {
 
         {/* Current Subscription & Entitlement Summary */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          <div className="lg:col-span-7 p-6 rounded-2xl oppsift-card space-y-5">
+          <div className="lg:col-span-7 p-6 rounded-lg oppsift-card space-y-5">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
                 <p className="text-xs font-semibold text-[#A33B59] dark:text-[#E8A4B5]">Current Workspace Plan</p>
@@ -203,7 +203,7 @@ export function SubscriptionBillingPage() {
           </div>
 
           {/* Payment Method Overview (Hosted Lemon Squeezy Flow) */}
-          <div className="lg:col-span-5 p-6 rounded-2xl oppsift-card flex flex-col justify-between space-y-4">
+          <div className="lg:col-span-5 p-6 rounded-lg oppsift-card flex flex-col justify-between space-y-4">
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -237,7 +237,7 @@ export function SubscriptionBillingPage() {
         </div>
 
         {/* Team Seat & Organisation Billing Summary */}
-        <div className="p-6 rounded-2xl oppsift-card space-y-4">
+        <div className="p-6 rounded-lg oppsift-card space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-[#A33B59] dark:text-[#E8A4B5]" />
@@ -291,7 +291,7 @@ export function SubscriptionBillingPage() {
         </div>
 
         {/* Refunds & Disputes Policy Card */}
-        <div className="p-6 rounded-2xl oppsift-card space-y-3">
+        <div className="p-6 rounded-lg oppsift-card space-y-3">
           <h3 className="font-display text-base font-semibold">Refunds &amp; Payment Disputes</h3>
           {refunds.length === 0 ? (
             <p className="text-xs text-[#64748B] dark:text-[#CBD5E1]">
@@ -332,7 +332,7 @@ export function UsageLimitsPage() {
           <span>Back to {getBackLabel('Subscription & Billing')}</span>
         </button>
 
-        <div className="p-5 rounded-2xl oppsift-card flex flex-wrap items-center justify-between gap-4">
+        <div className="p-5 rounded-lg oppsift-card flex flex-wrap items-center justify-between gap-4">
           <div className="space-y-1">
             <p className="text-xs font-semibold text-[#A33B59] dark:text-[#E8A4B5]">
               Active Entitlement Plan: {currentPlan.name}
@@ -415,7 +415,7 @@ export function BillingHistoryPage() {
           onDownload={(inv) => pushToast('info', `Invoice ${inv.invoiceNumber} PDF retrieval requested.`)}
         />
 
-        <div className="p-6 rounded-2xl oppsift-card space-y-3">
+        <div className="p-6 rounded-lg oppsift-card space-y-3">
           <div className="flex items-center gap-2">
             <Receipt className="w-4 h-4 text-[#164E8B] dark:text-[#38BDF8]" />
             <h3 className="font-display text-base font-semibold">Refund &amp; Dispute History</h3>
@@ -475,7 +475,7 @@ export function PlanChangePage() {
           <span>Back to {getBackLabel('Subscription & Billing')}</span>
         </button>
 
-        <div className="p-5 rounded-2xl oppsift-card flex flex-wrap items-center justify-between gap-4">
+        <div className="p-5 rounded-lg oppsift-card flex flex-wrap items-center justify-between gap-4">
           <div>
             <p className="text-xs font-semibold text-[#A33B59] dark:text-[#E8A4B5]">
               Current Plan: {currentPlan.name} ({subscription.frequency})
@@ -515,7 +515,7 @@ export function PlanChangePage() {
         </div>
 
         {targetId !== subscription.planId && !targetPlan.customPricing && (
-          <div className="p-6 rounded-2xl oppsift-card space-y-4">
+          <div className="p-6 rounded-lg oppsift-card space-y-4">
             <h3 className="font-display text-base font-semibold">
               Plan Transition Summary: {currentPlan.name} → {targetPlan.name}
             </h3>
@@ -605,7 +605,7 @@ export function CancelSubscriptionPage() {
         </button>
 
         {confirmed ? (
-          <div className="p-8 rounded-2xl oppsift-card space-y-4">
+          <div className="p-8 rounded-lg oppsift-card space-y-4">
             <div className="flex items-center gap-2 text-[#16A34A]">
               <CheckCircle2 className="w-5 h-5" />
               <h2 className="font-display text-lg font-bold">Cancellation recorded cleanly</h2>
@@ -626,7 +626,7 @@ export function CancelSubscriptionPage() {
             </button>
           </div>
         ) : (
-          <form onSubmit={handleConfirmCancel} className="p-6 rounded-2xl oppsift-card space-y-5">
+          <form onSubmit={handleConfirmCancel} className="p-6 rounded-lg oppsift-card space-y-5">
             <div className="flex items-start gap-3">
               <Ban className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
               <div>
@@ -706,7 +706,7 @@ export function StandaloneCheckoutPage() {
           <span>Back to {getBackLabel('Subscription & Billing')}</span>
         </button>
 
-        <div className="p-4 rounded-2xl oppsift-card flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div className="p-4 rounded-lg oppsift-card flex flex-wrap items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2">
             <Layers className="w-4 h-4 text-[#A33B59] dark:text-[#E8A4B5]" />
             <span className="font-semibold">Plan Selection:</span>

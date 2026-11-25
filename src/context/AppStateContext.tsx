@@ -144,10 +144,6 @@ interface AppStateContextValue {
   addAuditEvent: (event: Omit<AuditLogEvent, 'id' | 'timestamp'>) => void;
   userSessions: UserSessionRecord[];
   revokeOtherSessions: () => void;
-
-  /* Background Video Accessibility Preference */
-  reduceBackgroundMotion: boolean;
-  setReduceBackgroundMotion: (reduce: boolean) => void;
 }
 
 const AppStateContext = createContext<AppStateContextValue | undefined>(undefined);
@@ -200,24 +196,6 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [supportTickets, setSupportTickets] = useState<SupportTicket[]>(INITIAL_SUPPORT_TICKETS);
   const [auditEvents, setAuditEvents] = useState<AuditLogEvent[]>(INITIAL_AUDIT_EVENTS);
   const [userSessions, setUserSessions] = useState<UserSessionRecord[]>(INITIAL_USER_SESSIONS);
-  const [reduceBackgroundMotion, setReduceBackgroundMotionState] = useState<boolean>(() => {
-    try {
-      return typeof window !== 'undefined' && window.localStorage.getItem('oppsift_reduce_motion') === 'true';
-    } catch {
-      return false;
-    }
-  });
-
-  const setReduceBackgroundMotion = (reduce: boolean) => {
-    setReduceBackgroundMotionState(reduce);
-    try {
-      if (typeof window !== 'undefined') {
-        window.localStorage.setItem('oppsift_reduce_motion', String(reduce));
-      }
-    } catch {
-      // Ignore storage access errors in restricted frames
-    }
-  };
 
   const pushToast = (tone: ToastMessage['tone'], message: string) => {
     const id = `toast-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
@@ -860,8 +838,6 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
         addAuditEvent,
         userSessions,
         revokeOtherSessions,
-        reduceBackgroundMotion,
-        setReduceBackgroundMotion,
       }}
     >
       {children}

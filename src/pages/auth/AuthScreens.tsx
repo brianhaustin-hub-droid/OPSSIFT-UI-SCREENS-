@@ -13,7 +13,7 @@ import {
   UserCheck,
 } from 'lucide-react';
 import { OppSiftLogo } from '../../components/brand/OppSiftLogo';
-import { CinematicVideoBackdrop } from '../../components/media/CinematicVideoBackdrop';
+import { PhotographicBackdrop } from '../../components/media/PhotographicBackdrop';
 import { useAppState } from '../../context/AppStateContext';
 import { useRouter } from '../../context/RouterContext';
 import { useTheme } from '../../context/ThemeContext';
@@ -121,33 +121,33 @@ export function AuthScreensPage() {
       </div>
 
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-12">
-        {/* Left Brand Panel with Cinematic Video Backdrop */}
-        <CinematicVideoBackdrop
-          playlistIds={['global-cities', 'international-business']}
+        {/* Left Brand Panel with Automatic 100-Photo Global Slideshow */}
+        <PhotographicBackdrop
+          initialTheme="global-cities"
           overlayTone="burgundy-navy"
-          className="lg:col-span-5 flex flex-col justify-between"
-          showControls={true}
+          minHeightClass="min-h-[360px] lg:min-h-[calc(100vh-56px)]"
+          className="lg:col-span-6 flex flex-col justify-between"
         >
           <div className="p-8 sm:p-12 flex flex-col justify-between h-full">
             <div>
               <OppSiftLogo variant="dark-bg" size="lg" />
-              <h1 className="mt-10 font-display text-3xl font-bold leading-tight text-balance text-white">
+              <h1 className="mt-10 font-display text-3xl sm:text-4xl font-bold leading-tight text-balance text-white">
                 Global opportunity intelligence, backed by verified source provenance.
               </h1>
-              <p className="mt-4 text-sm text-[#FFF1F2]/85 leading-relaxed max-w-md">
+              <p className="mt-4 text-sm text-white/90 leading-relaxed max-w-md">
                 Authenticated via Neon Managed Auth and Google OAuth. Access personalised tender matching, eligibility analysis, and team preparation pipelines.
               </p>
             </div>
-            <div className="mt-10 pt-6 border-t border-white/15 space-y-2 text-xs text-white/85">
+            <div className="mt-10 pt-6 border-t border-white/20 space-y-2 text-xs text-white/90">
               <p>Multi-jurisdiction currency &amp; timezone normalisation</p>
               <p>Clause-cited AI eligibility interpretation</p>
               <p>Role-based organisation workspaces</p>
             </div>
           </div>
-        </CinematicVideoBackdrop>
+        </PhotographicBackdrop>
 
         {/* Right Form Panel */}
-        <div className="lg:col-span-7 flex items-center justify-center p-6 sm:p-12">
+        <div className="lg:col-span-6 flex items-center justify-center p-6 sm:p-12">
           <div className="w-full max-w-md rounded-lg border border-[#E2E8F0] dark:border-[#263244] bg-white dark:bg-[#171923] p-6 sm:p-8 shadow-sm">
             {formFeedback && (
               <div className="mb-4 p-3 rounded-md border border-[#DC2626]/30 bg-[#DC2626]/8 text-xs text-[#DC2626] flex items-start gap-2">

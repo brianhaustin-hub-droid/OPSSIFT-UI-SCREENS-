@@ -99,7 +99,7 @@ export function PlanTierCard({
 
   return (
     <div
-      className={`p-6 rounded-2xl flex flex-col justify-between transition-all ${
+      className={`p-6 rounded-lg flex flex-col justify-between transition-all ${
         plan.recommended
           ? 'oppsift-card border-[#A33B59] dark:border-[#E8A4B5] ring-1 ring-[#A33B59]/25'
           : 'oppsift-card'
@@ -214,7 +214,7 @@ export function PlanComparisonMatrix({ catalog }: { catalog: PlanTierConfig[] })
   ];
 
   return (
-    <div className="overflow-x-auto rounded-2xl oppsift-card">
+    <div className="overflow-x-auto rounded-lg oppsift-card">
       <table className="w-full text-left text-xs">
         <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
           <tr>
@@ -257,7 +257,7 @@ export function UsageMetricCard({
   const isNearCap = !isCustom && pct >= 80;
 
   return (
-    <div className="p-5 rounded-2xl oppsift-card space-y-3 flex flex-col justify-between">
+    <div className="p-5 rounded-lg oppsift-card space-y-3 flex flex-col justify-between">
       <div>
         <div className="flex items-center justify-between gap-2 text-xs">
           <span className="font-semibold text-[#172033] dark:text-white">{metric.label}</span>
@@ -312,7 +312,7 @@ export function InvoiceHistoryTable({
 }) {
   if (invoices.length === 0) {
     return (
-      <div className="p-10 rounded-2xl oppsift-card text-center space-y-2">
+      <div className="p-10 rounded-lg oppsift-card text-center space-y-2">
         <div className="mx-auto w-11 h-11 rounded-xl bg-[#FFF1F2] dark:bg-[#541B32]/40 text-[#541B32] dark:text-[#E8A4B5] flex items-center justify-center">
           <Receipt className="w-5 h-5" />
         </div>
@@ -325,7 +325,7 @@ export function InvoiceHistoryTable({
   }
 
   return (
-    <div className="overflow-x-auto rounded-2xl oppsift-card">
+    <div className="overflow-x-auto rounded-lg oppsift-card">
       <table className="w-full text-left text-xs">
         <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
           <tr>
@@ -397,7 +397,7 @@ export function PaymentRecoveryBanner({
   if (status !== 'past_due' && status !== 'suspended') return null;
 
   return (
-    <div className="p-5 rounded-2xl border border-[#DC2626]/35 bg-[#DC2626]/8 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+    <div className="p-5 rounded-lg border border-[#DC2626]/35 bg-[#DC2626]/8 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
       <div className="flex items-start gap-3">
         <AlertTriangle className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
         <div className="space-y-1 text-xs">
@@ -480,7 +480,7 @@ export function CheckoutExperiencePanel({
   };
 
   return (
-    <div className="oppsift-card rounded-2xl p-6 space-y-6">
+    <div className="oppsift-card rounded-lg p-6 space-y-6">
       <div className="flex items-start justify-between gap-4 border-b border-[#E2E8F0] dark:border-white/10 pb-4">
         <div>
           <p className="text-xs font-semibold text-[#A33B59] dark:text-[#E8A4B5]">

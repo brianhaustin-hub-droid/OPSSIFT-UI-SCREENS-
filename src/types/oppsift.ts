@@ -551,48 +551,34 @@ export interface UserSessionRecord {
   current: boolean;
 }
 
-/* ---------------- Cinematic Media & Visual Identity Types ---------------- */
+/* ---------------- Photographic Background Slideshow Types ---------------- */
 
-export type CinematicPlaylistId =
+export type PhotographicThemeId =
   | 'global-cities'
   | 'international-trade'
+  | 'ports-logistics'
   | 'infrastructure'
   | 'international-business'
-  | 'procurement'
   | 'global-markets'
   | 'research-innovation'
   | 'energy-sustainability'
   | 'agriculture-development'
   | 'connectivity-emerging';
 
-export interface CinematicPlaylistMeta {
-  id: CinematicPlaylistId;
+export interface PhotographicThemeMeta {
+  id: PhotographicThemeId;
   label: string;
   description: string;
-  intendedSurface: string;
 }
 
-export interface CinematicVideoAsset {
+export interface PhotographicAsset {
   id: string;
-  playlistId: CinematicPlaylistId;
+  theme: PhotographicThemeId;
   title: string;
   provider: 'Wikimedia Commons' | 'NASA Image & Video Library';
-  creator: string;
-  sourcePageUrl: string;
-  streamUrl: string;
-  posterUrl: string;
-  licenseName: string;
-  licenseUrl: string;
-  commercialVerified: boolean;
-  embedVerified: boolean;
-  attributionRequired: boolean;
-  attributionText: string;
-  intendedSection: string;
-  aspectRatio: string;
-  durationSeconds: number;
+  license: string;
   width: number;
   height: number;
-  status: 'Approved' | 'Fallback';
+  imageUrl: string;
+  sourceUrl: string;
 }
-
-

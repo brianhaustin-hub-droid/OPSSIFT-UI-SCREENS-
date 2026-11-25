@@ -22,7 +22,6 @@ import {
   X,
 } from 'lucide-react';
 import { WorkspaceLayout } from '../../components/layout/WorkspaceLayout';
-import { CinematicVideoBackdrop } from '../../components/media/CinematicVideoBackdrop';
 import { HorizontalBarChart } from '../../components/ui/Charts';
 import { EmptyStatePanel } from '../../components/ui/StateViews';
 import { useAppState } from '../../context/AppStateContext';
@@ -236,7 +235,7 @@ function OpportunityExplorerCore({
     <WorkspaceLayout title={pageTitle} breadcrumb={breadcrumb}>
       <div className="space-y-5 pb-14">
         {/* Search & Advanced Filters Card */}
-        <div className="p-5 rounded-2xl oppsift-card space-y-4">
+        <div className="p-5 rounded-lg oppsift-card space-y-4">
           <div className="flex flex-col md:flex-row gap-3">
             <div className="relative flex-1">
               <Search className="w-4 h-4 text-[#64748B] absolute left-3 top-1/2 -translate-y-1/2" />
@@ -602,7 +601,7 @@ function OpportunityExplorerCore({
               return (
                 <article
                   key={opp.id}
-                  className="p-5 rounded-2xl oppsift-card flex flex-col justify-between gap-4 relative"
+                  className="p-5 rounded-lg oppsift-card flex flex-col justify-between gap-4 relative"
                 >
                   <div>
                     <div className="flex items-center justify-between gap-2 text-xs text-[#64748B] dark:text-[#CBD5E1]">
@@ -733,7 +732,7 @@ function OpportunityExplorerCore({
             })}
           </div>
         ) : (
-          <div className="overflow-x-auto rounded-2xl oppsift-card">
+          <div className="overflow-x-auto rounded-lg oppsift-card">
             <table className="w-full text-left text-xs">
               <thead className="bg-[#F8FAFC] dark:bg-white/6 text-[#64748B] dark:text-[#CBD5E1]">
                 <tr>
@@ -804,7 +803,7 @@ function OpportunityExplorerCore({
 
       {/* Persistent Comparison Tray */}
       {compareIds.length > 0 && (
-        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-30 w-[calc(100%-1.5rem)] max-w-2xl rounded-2xl border border-[#A33B59]/40 bg-white dark:bg-[#1B1226] shadow-2xl px-4 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 text-xs">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-30 w-[calc(100%-1.5rem)] max-w-2xl rounded-lg border border-[#A33B59]/40 bg-white dark:bg-[#1B1226] shadow-2xl px-4 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 text-xs">
           <div className="flex items-center gap-2 min-w-0">
             <Columns className="w-4 h-4 text-[#A33B59] dark:text-[#E8A4B5] shrink-0" />
             <span className="font-semibold truncate">
@@ -888,7 +887,7 @@ export function OpportunityComparisonPage() {
   return (
     <WorkspaceLayout title="Opportunity Comparison" breadcrumb="Discovery / Side-by-Side Comparison">
       <div className="space-y-6">
-        <div className="p-5 rounded-2xl oppsift-card flex flex-wrap items-center justify-between gap-4 text-xs">
+        <div className="p-5 rounded-lg oppsift-card flex flex-wrap items-center justify-between gap-4 text-xs">
           <div>
             <h2 className="font-display text-base font-bold">Compare Up to 3 Opportunities</h2>
             <p className="text-[#64748B] dark:text-[#CBD5E1] mt-0.5">
@@ -932,7 +931,7 @@ export function OpportunityComparisonPage() {
             onAction={() => navigate('/discover')}
           />
         ) : (
-          <div className="overflow-x-auto rounded-2xl oppsift-card">
+          <div className="overflow-x-auto rounded-lg oppsift-card">
             <table className="w-full text-left text-xs">
               <thead className="bg-[#F8FAFC] dark:bg-white/6 border-b border-[#E2E8F0] dark:border-white/10">
                 <tr>
@@ -1211,12 +1210,7 @@ export function CountryDiscoveryPage({ countryCode }: { countryCode: string }) {
           <span>Back to {getBackLabel('Opportunity Explorer')}</span>
         </button>
 
-        <CinematicVideoBackdrop
-          playlistIds={['global-cities', 'global-markets', 'infrastructure']}
-          overlayTone="burgundy-navy"
-          className="rounded-lg border border-[#E2E8F0] dark:border-white/10"
-          showControls={true}
-        >
+        <div className="rounded-lg oppsift-executive-card text-white border border-[#E2E8F0] dark:border-white/10">
           <div className="p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             <div className="flex items-start gap-3.5">
               <div className="w-12 h-12 rounded-md bg-white/12 border border-white/20 text-white font-mono text-sm font-bold flex items-center justify-center shrink-0">
@@ -1251,7 +1245,7 @@ export function CountryDiscoveryPage({ countryCode }: { countryCode: string }) {
               </select>
             </div>
           </div>
-        </CinematicVideoBackdrop>
+        </div>
 
         <div className="oppsift-intel-rule pt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
           <div className="lg:col-span-5 p-5 rounded-lg oppsift-card">

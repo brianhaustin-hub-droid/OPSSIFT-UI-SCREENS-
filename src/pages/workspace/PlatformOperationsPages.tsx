@@ -347,7 +347,7 @@ export function AccountSecurityPage() {
 /* ---------------- 2. Global Preferences (/settings/preferences) ---------------- */
 
 export function GlobalPreferencesPage() {
-  const { onboarding, updateOnboarding, addAuditEvent, pushToast, reduceBackgroundMotion, setReduceBackgroundMotion } = useAppState();
+  const { onboarding, updateOnboarding, addAuditEvent, pushToast } = useAppState();
   const { navigate, goBack, getBackLabel } = useRouter();
 
   const [language, setLanguage] = useState(onboarding.preferredLanguage || 'English (International)');
@@ -558,20 +558,6 @@ export function GlobalPreferencesPage() {
                   />
                 </label>
               ))}
-              <label className="flex items-start justify-between gap-4 p-3.5 rounded-md border border-[#E2E8F0] dark:border-white/10 cursor-pointer hover:border-[#A33B59]/50">
-                <div>
-                  <p className="font-semibold text-[#172033] dark:text-white">Reduce Background Video Motion</p>
-                  <p className="text-[11px] text-[#64748B] dark:text-[#94A3B8] mt-0.5">
-                    Freeze ambient hero and header video backdrops onto static verified posters.
-                  </p>
-                </div>
-                <input
-                  type="checkbox"
-                  checked={reduceBackgroundMotion}
-                  onChange={(e) => setReduceBackgroundMotion(e.target.checked)}
-                  className="mt-1 accent-[#541B32]"
-                />
-              </label>
             </div>
           </section>
         </div>
@@ -618,7 +604,7 @@ export function ActivityAuditPage({ adminMode = false }: { adminMode?: boolean }
         breadcrumb="Admin / Audit History"
       >
         <div className="p-8 rounded-lg oppsift-card max-w-xl mx-auto text-center space-y-4">
-          <div className="mx-auto w-12 h-12 rounded-2xl bg-[#FFF1F2] dark:bg-[#541B32]/40 text-[#541B32] dark:text-[#E8A4B5] flex items-center justify-center">
+          <div className="mx-auto w-12 h-12 rounded-lg bg-[#FFF1F2] dark:bg-[#541B32]/40 text-[#541B32] dark:text-[#E8A4B5] flex items-center justify-center">
             <ShieldAlert className="w-6 h-6" />
           </div>
           <h2 className="font-display text-xl font-bold">Administrative Audit Scope Restricted</h2>
